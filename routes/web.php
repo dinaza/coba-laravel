@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "D'Blogs ID",
+        "email" => "dblogs@gmail.com",
+        "image" => "msbing.jpeg"
+    ]);
 });
 
 Route::get('/blog', function () {
